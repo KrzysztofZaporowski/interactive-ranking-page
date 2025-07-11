@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --neutral-light: hsl(217, 12%, 63%);
+    --neutral-dark: hsl(213, 19%, 18%);
+    --background-color: hsl(216, 12%, 8%);
+}
+
+body {
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--neutral-light);
+    display: flex;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+.states_containter {
+    background-color: var(--neutral-dark);
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 30px;
+    overflow: hidden;
+    width: 90%;
+}
+
+.states_containter img {
+    border-radius: 50%;
+    background-color: var(--neutral-light);
+    display: block;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.rating-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.rating-buttons button {
+    background-color: hsl(249, 5%, 28%);
+    border: none;
+    border-radius: 50%;
+    color: var(--neutral-light);
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px 0;
+    height: 50px;
+    width: 50px;
+}
+
+.rating-buttons button:hover {
+    background-color: var(--orange);
+    color: var(--neutral-dark);
+}
+
+.rating-buttons button.selected {
+    background-color: var(--white);
+    color: var(--neutral-dark);
+}
+
+form button {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 50px;
+    color: var(--background-color);
+    cursor: pointer;
+    font-size: 15px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: 700;
+}
+
+form button:hover {
+    background-color: var(--white);
+}
+
+h1 {
+    color: var(--white);
+    margin: 20px 0;
+}
+
+p {
+    margin: 20px 0;
+}
